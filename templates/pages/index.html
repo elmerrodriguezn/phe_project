@@ -1,0 +1,749 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %} | Inicio {% endblock %}
+
+{% block content %}
+<section class="how-does-work">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="card card-custom">
+                    <div class="card-body">
+                        <h3>Intercambiadores de Calor de Placa Accu-Therm®</h3>
+                        <p>
+                            Los intercambiadores de calor de placas Accu-Therm® están diseñados para
+                            brindarle soluciones de transferencia de calor altamente eficientes y sin
+                            preocupaciones, ya sea que esté procesando fluidos simples, soluciones
+                            viscosas o partículas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<ul class="nav nav-tabs nav-tabs-custom justify-content-center" id="myTab" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" id="how-tab" data-toggle="tab" href="#how" role="tab" aria-controls="how"
+            aria-selected="true">
+            ¿Como funcionan?
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="features-tab" data-toggle="tab" href="#features" role="tab" aria-controls="features"
+            aria-selected="false">
+            Características
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="types-tab" data-toggle="tab" href="#types" role="tab" aria-controls="types"
+            aria-selected="false">
+            Tipos
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="configurations-tab" data-toggle="tab" href="#configurations" role="tab"
+            aria-controls="configurations" aria-selected="false">
+            Configuraciónes
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="applications-tab" data-toggle="tab" href="#applications" role="tab"
+            aria-controls="applications" aria-selected="false">
+            Aplicaciones
+        </a>
+    </li>
+</ul>
+<div class="tab-content mt-4" id="myTabContent">
+    <div class="tab-pane fade show active" id="how" role="tabpanel" aria-labelledby="how-tab">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="box-title">
+                    <h4>¿COMO FUNCIONAN LOS ACCU-THERM® DE MUELLER?</h4>
+                </div>
+
+                <div class="col-md-10">
+                    <div class="card card-custom">
+                        <div class="row no-gutters">
+                            <div class="col-md-3 ">
+                                <img src="{% static 'img/how-works/flujo-accu-therm.png' %}" class="card-img"
+                                    alt="Flujo Accu Therm" />
+                            </div>
+                            <div class="col-md-6 offset-md-1">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Un intercambiador de calor de placas Accu-Therm (PHE)
+                                        Consiste en una serie de transferencia de calor en relieve.
+                                        Placas con juntas alrededor del perímetro de cada placa para
+                                        contener la presión y controlar el flujo de cada medio.
+                                        Pueden ser diseñados para múltiples fluidos o requisitos
+                                        térmicos en un solo marco. Las placas con juntas se montan
+                                        en un paquete, se montan en los carriles de guía superior e
+                                        inferior, y comprimido entre dos marcos inferiores con
+                                        tornillos de compresión.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-10">
+                    <div class="card card-custom">
+                        <div class="row no-gutters">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <ol>
+                                        <li>
+                                            Los fluidos entran en el PHE a través de las conexiones en el marco inferior
+                                            y se distribuyen a través del orificio en las
+                                            placas.
+                                        </li>
+                                        <li>
+                                            Dirigidos por las juntas, el fluido que sera calentado y enfriado baja por
+                                            cada lado de la placa, mientras este se calienta y se enfría en la dirección
+                                            opuesta de la placa.
+                                        </li>
+                                        <li>
+                                            La diferencia de temperatura creada por estos flujos
+                                            opuestos resulta en la temperatura de aproximación más
+                                            cercana posible para la máxima eficiencia de transferencia
+                                            de calor.
+                                        </li>
+                                        <li>
+                                            El fluido calentado y enfriado sale del PHE a través de conexiones en el
+                                            marco final.
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="col-md-3 offset-md-1">
+                                <img src="{% static 'img/how-works/funcionamiento.png' %}" class="card-img"
+                                    alt="Funcionamiento" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="features" role="tabpanel" aria-labelledby="features-tab">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 box-title col-sm-12">
+                    <h3>CARACTERÍSTICAS Y BENEFICIOS</h3>
+                </div>
+                <div class="col-md-6">
+                    <div class="card card-custom">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="{% static 'img/features/eficiencia.png' %}" class="card-img"
+                                    alt="EFICIENCIA" />
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title card-title-custom">EFICIENCIA</h5>
+
+                                    <ul>
+                                        <li>Valores en "U" de 1.500 y mayores son posibles.</li>
+                                        <li>
+                                            Las placas Accu-Therm promueven una alta turbulencia a
+                                            bajas velocidades de fluido.
+                                        </li>
+                                        <li>
+                                            La alta turbulencia resulta en coeficientes de
+                                            transferencia de calor muy altos.
+                                        </li>
+                                        <li>
+                                            Múltiples tareas con una sola unidad: calentar o enfriar
+                                            dos o más fluidos dentro de la misma unidad instalando
+                                            secciones divisorias intermedias.
+                                        </li>
+                                        <li>
+                                            Más superficie de transferencia de calor: hasta 25,000
+                                            pies cuadrados de Superficie de transferencia de calor en
+                                            un solo intercambiador.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card card-custom">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="{% static 'img/features/bajos-costos.png' %}" class="card-img"
+                                    alt="Bajos Costos" />
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title card-title-custom">
+                                        COSTOS MÁS BAJOS
+                                    </h5>
+
+                                    <ul>
+                                        <li>
+                                            Más económicos que otros tipos de intercambiadores de
+                                            calor debido a la mayor eficiencia térmica y menores
+                                            costos de fabricación.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card card-custom">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="{% static 'img/features/temperatura.png' %}" class="img-card"
+                                    alt="Temperaturas de aproximación" />
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title card-title-custom">
+                                        TEMPERATURAS DE APROXIMACIÓN MÁS CERCANA
+                                    </h5>
+
+                                    <ul>
+                                        <li>
+                                            Las temperaturas de aproximación de 2 a 3°F son posibles
+                                            debido al contraflujo y alta eficiencia de
+                                            transferencia de calor de las placas.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card card-custom">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="{% static 'img/features/mantenimiento.png' %}" class="img-card"
+                                    alt="Facilidad de limpieza y mantenimiento" />
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title card-title-custom">
+                                        FACILIDAD DE LIMPIEZA Y MANTENIMIENTO
+                                    </h5>
+
+                                    <ul>
+                                        <li>
+                                            Simplemente retire los pernos de compresión y deslice el marco para
+                                            inspeccionar el 100% de la
+                                            superficie de transferencia de calor Accu-Therm.
+                                        </li>
+                                        <li>Fácil y económico de limpiar en sitio (CIP).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card card-custom">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="{% static 'img/features/expandible.png' %}" class="img-card"
+                                    alt="Expandible" />
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title card-title-custom">EXPANDIBLE</h5>
+
+                                    <ul>
+                                        <li>
+                                            Ajuste el rendimiento térmico de la unidad agregando o
+                                            quitando placas.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card card-custom">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="{% static 'img/features/eliminacion-cruzada.png' %}" class="img-card"
+                                    alt="Eliminación cruzada" />
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title card-title-custom">
+                                        CONTAMINACIÓN CRUZADA ELIMINADA
+                                    </h5>
+
+                                    <ul>
+                                        <li>Cada medio es empaquetado individualmente.</li>
+                                        <li>
+                                            El espacio entre las juntas se ventila a la atmósfera.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card card-custom">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="{% static 'img/features/conexiones.png' %}" class="img-card"
+                                    alt="Conexiones" />
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title card-title-custom">CONEXIONES</h5>
+
+                                    <ul>
+                                        <li>
+                                            Los puertos tachonados son estándar y se pueden alinear
+                                            completamente para proteger contra la erosión y corrosión
+                                            del marco.
+                                        </li>
+                                        <li>
+                                            También están disponibles las conexiones de solapa, de
+                                            soldadura, de casquillo, y victaulic.
+                                        </li>
+                                        <li>
+                                            Las conexiones se pueden mezclar y combinar para
+                                            satisfacer las necesidades individuales
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card card-custom">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="{% static 'img/features/compacto.png' %}" class="img-card" alt="Compacto" />
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title card-title-custom">
+                                        COMPACTO Y LIGERO
+                                    </h5>
+
+                                    <ul>
+                                        <li>
+                                            En comparación con los intercambiadores de calor de
+                                            tubos y coraza, los PHE de capacidad similar requiere
+                                            solo 1/5 a 1/2 el espacio del piso
+                                        </li>
+                                        <li>
+                                            Más ligero en peso total que los intercambiadores de calor
+                                            equivalentes debido a la reducción de volumen de líquido y
+                                            área de superficie más eficiente para una aplicación dada
+                                        </li>
+                                        <li>
+                                            Las conexiones se pueden mezclar y combinar para
+                                            satisfacer las necesidades individuales
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card card-custom">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="{% static 'img/features/alto-flujo.png' %}" class="img-card"
+                                    alt="Alto flujo" />
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title card-title-custom">
+                                        TARIFAS DE ALTO FLUJO
+                                    </h5>
+
+                                    <ul>
+                                        <li>Flujos hasta 24,000 gpm</li>
+                                        <li>Diámetros de puerto hasta 16"</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card card-custom">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="{% static 'img/features/inspeccion.png' %}" class="img-card"
+                                    alt="Inspección" />
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title card-title-custom">
+                                        INSPECCIÓN Y PRUEBA
+                                    </h5>
+                                    <ul>
+                                        <li>
+                                            Inspecciones rigurosas de aseguramiento de la calidad.
+                                        </li>
+                                        <li>
+                                            Cada circuito probado independientemente a la presión de
+                                            diseño completo
+                                        </li>
+                                        <li>Registro ASME disponible</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card card-custom">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="{% static 'img/features/reduccion-suciedad.png' %}" class="img-card"
+                                    alt="Reducción Suciedad" />
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title card-title-custom">
+                                        AUMENTO REDUCIDO
+                                    </h5>
+                                    <ul>
+                                        <li>
+                                            Alta turbulencia, distribución uniforme del fluido, placa
+                                            lisa. La superficie y las altas tensiones de corte reducen
+                                            el ensuciamiento.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card card-custom">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="{% static 'img/features/protector.png' %}" class="img-card" alt="Protector" />
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title card-title-custom">PROTECTOR</h5>
+                                    <ul>
+                                        <li>
+                                            Las fundas opcionales aprobadas por OSHA están disponibles
+                                            en aluminio en relieve resistente o acero
+                                            inoxidable 2B para proteger al personal
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="types" role="tabpanel" aria-labelledby="types-tab">
+        <div class="container">
+            <div class="box-title">
+                <h3>TIPOS DE INTERCAMBIADORES DE CALOR DE PLACAS</h3>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-md-10">
+                    <div class="card card-custom">
+                        <div class="row no-gutters">
+                            <div class="col-md-2 ">
+                                <img src="{% static 'img/types/intercambiador-placa-accu-therm.png' %}" class="card-img"
+                                    alt="Intercambiador de calor accu therm" />
+                            </div>
+                            <div class="col-md-8 offset-md-1">
+                                <div class="card-body">
+                                    <h5 class="card-title card-title-custom ">
+                                        Accu-Therm Intercambiador de calor de placas
+                                    </h5>
+                                    <p class="card-text">
+                                        Los intercambiadores de calor de placas Accu-Therm se pueden
+                                        encontrar en una amplia variedad de industrias para multitud
+                                        de aplicaciones. Compacto en tamaño, la facilidad de
+                                        mantenimiento y la alta eficiencia los hacen ideales para
+                                        casi cualquier tarea de calentamiento o enfriamiento.
+                                        Disponible en una extensa gama de tamaños, aleaciones y
+                                        configuraciones de marcos para satisfacer sus necesidades en
+                                        industrias como HVAC, química, petróleo y gas, y más.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <div class="card card-custom">
+                        <div class="row no-gutters">
+                            <div class="col-md-2">
+                                <img src="{% static 'img/types/intercambiador-placa-sanitario.png' %}" class="card-img"
+                                    alt="Intercambiador de placa sanitario" />
+                            </div>
+                            <div class="col-md-8 offset-md-1">
+                                <div class="card-body">
+                                    <h5 class="card-title card-title-custom ">
+                                        Accu-Therm Intercambiador de calor de placas
+                                    </h5>
+                                    <p class="card-text">
+                                        El intercambiador de calor de placas sanitarias Accu-Therm
+                                        es Diseñado para satisfacer una variedad de aplicaciones de
+                                        procesos sanitarios. como la elaboración de cerveza,
+                                        productos lácteos y procesamiento de alimentos. Se reúne o
+                                        supera los requisitos sanitarios más exigentes.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-10">
+                    <div class="card card-custom">
+                        <div class="row no-gutters">
+                            <div class="col-md-2">
+                                <img src="{% static 'img/types/intercambiador-placa-semi-soldado.png' %}"
+                                    class="card-img" alt="Intercambiador de placa semi soldado" />
+                            </div>
+                            <div class="col-md-8 offset-md-1">
+                                <div class="card-body">
+                                    <h5 class="card-title card-title-custom ">
+                                        Intercambiador de calor de placas semi-soldado
+                                    </h5>
+                                    <p class="card-text">
+                                        En algunas aplicaciones suelen usar
+                                        refrigerante o fluido que es corrosivo para los materiales
+                                        de la junta en el lado soldado del intercambiador de calor. Las presiones más
+                                        altas mejoran el sellado de las
+                                        juntas. El paquete de placas se construye utilizando casetes
+                                        de soldadura (dos placas soldadas juntas). El lado del
+                                        refrigerante está contenido dentro la parte soldada de la
+                                        caja para incluir la soldadura de la puerto de solución. Las
+                                        juntas se utilizan para sellar el lado secundario, lo que
+                                        hace que el paquete de placas sea fácil de desmontar y
+                                        limpiar
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <div class="card card-custom">
+                        <div class="row no-gutters">
+                            <div class="col-md-2">
+                                <img src="{% static 'img/types/intercambiador-placa-soldado.png' %}" class="card-img"
+                                    alt="Intercambiador de placa soldado" />
+                            </div>
+                            <div class="col-md-8 offset-md-1">
+                                <div class="card-body">
+                                    <h5 class="card-title card-title-custom ">
+                                        Intercambiador de calor de placas soldadas
+                                    </h5>
+                                    <p class="card-text">
+                                        Intercambiadores de calor, grandes y pequeños,
+                                        para satisfacer su aplicación y el programa se está
+                                        ampliando constantemente.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="configurations" role="tabpanel" aria-labelledby="configurations-tab">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="box-title">
+                        <h3>CONFIGURACIÓNES</h3>
+                    </div>
+                    <p>
+                        Mientras que los fluidos calientes y fríos fluyen en direcciones
+                        opuestas a través de una sola placa, el patrón de flujo entre las
+                        placas puede variar. Los patrones de flujo del intercambiador de
+                        calor de placas pueden ser simples o de varias pasadas.
+                    </p>
+                </div>
+
+                <div class="col-md-10">
+                    <div class="card card-custom">
+                        <div class="row no-gutters">
+                            <div class="col-md-5 ">
+                                <div class="card-body">
+                                    <h5 class="card-title card-title-custom ">PASE ÚNICO</h5>
+                                    <p class="card-text">
+                                        Una disposición de una sola pasada significa que cada fluido
+                                        fluye en la misma dirección respectiva a través de toda la unidad de la placa.
+                                        Las unidades de una sola pasada son
+                                        adecuadas para la mayoría de las aplicaciones
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 offset-md-1">
+                                <img src="{% static 'img/settings/unico-pase.png' %}" class="card-img"
+                                    alt="Pase único" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-10">
+                    <div class="card card-custom">
+                        <div class="row no-gutters">
+                            <div class="col-md-5">
+                                <div class="card-body">
+                                    <h5 class="card-title card-title-custom ">
+                                        PASE MÚLTIPLE
+                                    </h5>
+                                    <p class="card-text">
+                                        Una disposición de múltiples pasadas está diseñada para que
+                                        los fluidos puedan cambiar sus respectivas direcciones de
+                                        flujo. Las temperaturas extremadamente cercanas o las
+                                        grandes diferencias de temperatura pueden requerir una configuración de pase
+                                        múltiple.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 offset-md-1">
+                                <img src="{% static 'img/settings/multi-pase.png' %}" class="card-img"
+                                    alt="Multi pase" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="applications" role="tabpanel" aria-labelledby="applications-tab">
+        <div class="container">
+            <div class="box-title">
+                <h4>APLICACIÓNES</h4>
+            </div>
+            <div class="card-columns">
+                <div class="card card-applications">
+                    <img src="{% static 'img/applications/bebida.png' %}" class="card-img-top" alt="Bebida" />
+                    <div class="card-body">
+                        <h5 class="card-title">BEBIDA</h5>
+
+                        <ul>
+                            <li>Fermentación de cerveza</li>
+                            <li>Agua destilada</li>
+                            <li>Procesamiento de bebidas</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card card-applications">
+                    <img src="{% static 'img/applications/quimica.png' %}" class="card-img-top" alt="Quimica" />
+                    <div class="card-body">
+                        <h5 class="card-title">QUÍMICA</h5>
+
+                        <ul>
+                            <li>Almacenamiento de productos químicos</li>
+                            <li>Escala de planta piloto</li>
+                            <li>Chapado y anodizado</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card card-applications">
+                    <img src="{% static 'img/applications/alimentos.png' %}" class="card-img-top" alt="Alimentos" />
+                    <div class="card-body">
+                        <h5 class="card-title">ALIMENTOS</h5>
+
+                        <ul>
+                            <li>Procesamiento de huevos</li>
+                            <li>Procesamiento de alimentos líquidos</li>
+                            <li>Procesamiento de grasas y aceites</li>
+                            <li>Limpieza de equipos</li>
+                            <li>Enfriamiento Post Cosecha</li>
+                            <li>Bakery Chilling</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card card-applications">
+                    <img src="{% static 'img/applications/transferencia-calor.png' %}" class="card-img-top"
+                        alt="Transferencia de calor" />
+                    <div class="card-body">
+                        <h5 class="card-title">TRANSFERENCIA CALOR</h5>
+
+                        <ul>
+                            <li>Transferencia de calor personalizada</li>
+                            <li>Recuperación de energía</li>
+                            <li>Enfriamiento del motor</li>
+                            <li>OEM</li>
+                            <li>Secado de alfombras</li>
+                            <li>Calentamiento de tanques industriales</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card card-applications">
+                    <img src="{% static 'img/applications/hvac.png' %}" class="card-img-top" alt="HVAC" />
+                    <div class="card-body">
+                        <h5 class="card-title">HVAC</h5>
+
+                        <ul>
+                            <li>Aislamiento de la torre de enfriamiento</li>
+                            <li>Enfriamiento libre</li>
+                            <li>Calentador de vapor a agua</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card card-applications">
+                    <img src="{% static 'img/applications/aceite-gas.png' %}" class="card-img-top" alt="Aceite y gas" />
+                    <div class="card-body">
+                        <h5 class="card-title">ACEITE Y GAS</h5>
+
+                        <ul>
+                            <li>Estabilización del petróleo crudo</li>
+                            <li>Deshidratación de gas</li>
+                            <li>Condensación</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card card-applications">
+                    <img src="{% static 'img/applications/cuidado-personal.png' %}" class="card-img-top"
+                        alt="Cuidado personal" />
+                    <div class="card-body">
+                        <h5 class="card-title">CUIDADO PERSONAL</h5>
+
+                        <ul>
+                            <li>Cuidado del cabello</li>
+                            <li>Productos cosméticos</li>
+                            <li>Geles de ducha</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

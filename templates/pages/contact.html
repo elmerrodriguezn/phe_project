@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %} | Contacto {% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="box-title">
+                <h3>Contáctanos</h3>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <p>
+                Nuestro equipo de ingenieros se pondrá en contacto contigo para
+                encontrar la mejor solucion en tranferencia de calor.
+            </p>
+            <form action="{% url 'send_lead' %}" method="POST">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="full-name">Nombre completo:</label>
+                    <input type="text" class="form-control" id="full-name" name="fullName" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" class="form-control" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                    <label for="phone">Teléfono:</label>
+                    <input type="phone" class="form-control" id="phone" name="phone" required />
+                </div>
+                <div class="form-group">
+                    <label for="msg">Mensaje:</label>
+                    <textarea class="form-control" name="msg" id="msg"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary-custom">Enviar</button>
+                <a href="{% url 'index' %}" class="btn btn-primary-custom ml-4">Página de inicio</a>
+            </form>
+        </div>
+        <div class="col-md-4">
+            {% include 'pages/partials/_slider.html' %}
+        </div>
+    </div>
+</div>
+{% endblock %}

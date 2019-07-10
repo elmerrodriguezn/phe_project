@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %} | Muchas Gracias por contáctarnos {% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card card-custom">
+                <div class="card-body">
+                    <div class="box-title">
+                        <h1>Muchas Gracias por contáctarnos</h1>
+                        <p>¡Significa mucho para nosotros, justo como tú! Realmente apreciamos que nos brindes un
+                            momento de tu tiempo hoy. Gracias por ser tu.</p>
+                        <a href="{% url 'index' %}" class="btn btn-primary-custom">Página de inicio</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            {% include 'pages/partials/_slider.html' %}
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}
