@@ -1,10 +1,15 @@
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark custom-navbar">
+{% load static %}
+<nav class="navbar fixed-top navbar-expand-lg navbar-light custom-navbar">
     <a href="{% url 'index' %}" class="navbar-brand">
-        <img
-            src="https://www.paulmueller.com/hs-fs/hubfs/2017/Home/PMC_FINAL_LOGO_2018.jpg?width=181&name=PMC_FINAL_LOGO_2018.jpg" />
+        <img src="https://www.paulmueller.com/hs-fs/hubfs/2017/Home/PMC_FINAL_LOGO_2018.jpg?width=181&name=PMC_FINAL_LOGO_2018.jpg" />
     </a>
+    <button class="navbar-toggler navbar-toggler-custom" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" onclick="menuIcon(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+  </button>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
                 <a href="{% url 'contact' %}" class="btn btn-primary-custom">Solicitar cotización</a>

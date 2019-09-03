@@ -121,10 +121,7 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'pages/static')
+    os.path.join(BASE_DIR, 'phe_project/static')
 ]
 
-try:
-    from .local_settings import *
-except ImportError:
-    pass
+
