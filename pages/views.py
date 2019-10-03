@@ -22,6 +22,7 @@ def send_lead(request):
         'crm.lead', 'create',
         {
             'name': 'plate-heat-exchanger.com.mx',
+            'user_id': 110,
             'contact_name': full_name,
             'email_from': email,
             'phone': phone,
