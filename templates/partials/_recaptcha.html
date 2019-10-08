@@ -1,0 +1,10 @@
+<script src='https://www.google.com/recaptcha/api.js?render=6LfyirwUAAAAAGNHi9tHzWHQJCbqsp0-3Tmnnrj_'></script>
+<script>
+    grecaptcha.ready(function() {
+        grecaptcha.execute('6LfyirwUAAAAAGNHi9tHzWHQJCbqsp0-3Tmnnrj_', {action: 'plateheatexchanger'})
+        .then(function(token) {
+        let recaptchaResponse = document.getElementById('recaptchaResponse');
+        recaptchaResponse.value = token;
+        });
+    });
+</script>

@@ -36,6 +36,7 @@
                     <label for="msg">Mensaje:</label>
                     <textarea class="form-control" name="msg" id="msg"></textarea>
                 </div>
+                {% include 'partials/_recaptcha_input.html' %}
                 <button type="submit" class="btn btn-primary-custom">Enviar</button>
                 <a href="{% url 'index' %}" class="btn btn-primary-custom ml-4">Página de inicio</a>
             </form>

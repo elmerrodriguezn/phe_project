@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from api.query import Query
+from modules.recaptcha import recaptcha
 
 
 def index(request):
@@ -11,25 +12,28 @@ def contact(request):
 
 
 def send_lead(request):
-    full_name = request.POST['full_name']
-    email = request.POST['email']
-    phone = request.POST['phone']
-    msg = request.POST['msg']
+    if request.method == 'POST' and recaptcha(request):
+        full_name = request.POST['full_name']
+        email = request.POST['email']
+        phone = request.POST['phone']
+        msg = request.POST['msg']
 
-    query = Query()
+        query = Query()
 
-    data = query.create(
-        'crm.lead', 'create',
-        {
-            'name': 'plate-heat-exchanger.com.mx',
-            'user_id': 110,
-            'contact_name': full_name,
-            'email_from': email,
-            'phone': phone,
-            'description': msg
-        })
+        data = query.create(
+            'crm.lead', 'create',
+            {
+                'name': 'plate-heat-exchanger.com.mx',
+                'user_id': 110,
+                'contact_name': full_name,
+                'email_from': email,
+                'phone': phone,
+                'description': msg
+            })
 
-    return redirect('/gracias-por-contactarnos/')
+        return redirect('thanks')
+    else:
+        return redirect('index')
 
 
 def thanks(request):
