@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from api.query import Query
 from modules.recaptcha import recaptcha
+from django.contrib import messages
 
 
 def index(request):
@@ -12,12 +13,12 @@ def contact(request):
 
 
 def send_lead(request):
-    if request.method == 'POST' and recaptcha(request):
-        full_name = request.POST['full_name']
-        email = request.POST['email']
-        phone = request.POST['phone']
-        msg = request.POST['msg']
+    full_name = request.POST['full_name']
+    email = request.POST['email']
+    phone = request.POST['phone']
+    msg = request.POST['msg']
 
+    if request.method == 'POST' and recaptcha(request) and '' not in (full_name, email, phone, msg):
         query = Query()
 
         data = query.create(
@@ -33,7 +34,8 @@ def send_lead(request):
 
         return redirect('thanks')
     else:
-        return redirect('index')
+        messages.add_message(request, messages.INFO, 'Favor de llenar los campos con la información correcta.')
+        return redirect('contact')
 
 
 def thanks(request):
